@@ -44,11 +44,7 @@ class Dispositivo:
         novo_horario = hora_alvo.strftime('%H:%M:%S')
         novo_data = hora_alvo.strftime('%Y-%m-%d')
 
-        if os.name == 'nt':  # Windows
-            os.system(f"time {novo_horario}")
-            os.system(f"date {novo_data}")
-        else:  # Linux/Mac (precisa de sudo)
-            os.system(f"sudo date -s '{novo_data} {novo_horario}'")
+        os.system(f"sudo date -s '{novo_data} {novo_horario}'")
 
         print(f"{self.nome} sincronizado para {novo_horario}")
 
