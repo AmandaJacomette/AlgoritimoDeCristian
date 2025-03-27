@@ -58,5 +58,5 @@ def sincronizacao_periodica(dispositivo, intervalo=5):
 
 # Inicialização do Cliente
 if __name__ == "__main__":
-    dispositivo = Dispositivo("Dispositivo", "192.168.1.11")  # Ajuste o IP conforme necessário
+    dispositivo = Dispositivo("Dispositivo", "192.168.1.11")
     sincronizacao_periodica(dispositivo)
