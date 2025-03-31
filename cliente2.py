@@ -10,7 +10,7 @@ PORTA = 12345
 class Dispositivo:
     """Classe que representa um dispositivo cliente que sincroniza seu relógio com o servidor gradualmente."""
     
-    def __init__(self, nome, ip, ajuste_por_ciclo=0.1):
+    def __init__(self, nome, ip, ajuste_por_ciclo):
         self.nome = nome
         self.ip = ip
         self.ajuste_por_ciclo = ajuste_por_ciclo  # Ajuste progressivo em segundos
